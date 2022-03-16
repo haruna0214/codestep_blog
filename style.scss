@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+body{
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    font-family: "Noto Sans" , "Noto Sans JP";
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+// ヘッダーに関するスタイル
+header {
+  width: 100%;
+  height: 80px;
+  background: white;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .site-title {
+    padding: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+  nav {
+    display: block;
+    background: black;
+    padding: 15px;
+  }
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+  }
+
+  li {
+    text-align: left;
+    color: white;
+    padding: 10px 60px 10px 0;
+  }
+}
+
+// ピックアップ記事3つに関するスタイル
+.pickup {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  margin-bottom: 60px;
+
+    .article {
+      width: 32%;
+    }
+    .img {
+      display: block;
+      height: 150px;
+      object-fit: cover;
+      width: 100%;
+    }
+      .article-title {
+        margin: 10px 0 15px 0;
+      }
+      .catch {
+          text-align: center;
+        }
+          .catch a {
+            padding-bottom: 1px;
+            color: #333;
+            position: relative;
+
+            &::after {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: #333;
+              display: inline-block;
+              position: absolute;
+              left: 0;
+              bottom: -5px;
+            }
+          }
+}
+
+// メインに関するスタイル
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  main {
+    width: 65%;
+    float: left;
+  }
+}
+
+
+// サイドバーに関するスタイル
+aside {
+  width: 33%;
+  padding: 20px;
+  float: right;
+}
+
+// フッターに関するスタイル
